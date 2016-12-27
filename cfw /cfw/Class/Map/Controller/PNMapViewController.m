@@ -109,70 +109,108 @@
     
 
 #warning 请输入上传位置信息的接口
-
-        
-        NSString *urlString = @"http://192.168.0.156:8080/miningbee-web/ws/userLocation/getNearUser";
-        urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-        NSURL *url = [NSURL URLWithString:urlString];
-        NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-        request.HTTPMethod = @"POST";
-        
-        // 2.设置请求头
-        [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-        
-//        NSString *longitude = [NSString stringWithFormat:@"%f",self.longitude];
-//        NSString *latitude = [NSString stringWithFormat:@"%f",self.latitude];
     
+       AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+       manager.requestSerializer = [AFHTTPRequestSerializer serializer];//默认的方式
+       manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    // http://bee.prismnetwork.cn/ws/userLocation/getNearUsers/500.0f
+    NSString *urlString1 = @"http://192.168.0.156:8080/miningbee-web/ws/userLocation/getNearUser";
+    urlString1 = [urlString1 stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     
-//    NSLog(@"llllll%f%f",self.longitude,self.latitude);
     
     NSString *lon =  [NSString stringWithFormat:@"%f",self.longitude];
     NSString *lat = [NSString stringWithFormat:@"%f",self.latitude];
-  
+    
     NSDictionary *userDic = [[NSUserDefaults standardUserDefaults] objectForKey:@"ResultAuthData"];
     NSString *uid = [userDic objectForKey:@"uid"];
     NSLog(@"uid++++++++++++++++++%@",uid);
     
     // 3.设置请求体
-        NSDictionary *json = @{
-                               @"uid":uid,
-                               @"longitude":lon,
-                               @"latitude":lat,
-                               };
+    NSDictionary *json = @{
+                           @"uid":uid,
+                           @"longitude":lon,
+                           @"latitude":lat,
+                           };
     
-        //    NSData --> NSDictionary
-        // NSDictionary --> NSData
-        NSData *data = [NSJSONSerialization dataWithJSONObject:json options:NSJSONReadingAllowFragments error:nil];
-        request.HTTPBody = data;
-//        NSLog(@"sssssssss%lu", (unsigned long)data.length);
+
+      [manager POST:urlString1 parameters:json success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+          
+          NSLog(@"%@",responseObject);
+          
+      } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+          
+          NSLog(@"=============%@",error);
+      }];
     
-        // 4.发送请求
-        [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-            
-            if (data) {
-                NSLog(@"cccccccccccc%lu", (unsigned long)data.length);
-                //            NSLog(@"data%@",data);
-//                NSString *dataString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-                
-               NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+    
+    
+    
+    
+    
+    
         
-                NSLog(@"======================");
-                NSLog(@"%@",dic);
-                self.dataArr = [dic objectForKey:@"nearUsers"];
-                NSLog(@"数组长度6666666666=%lu",(unsigned long)self.dataArr.count);
-//                NSLog(@"dataArr%@",dataString);
-                
-                
-                [self biaozhu];
-            }else{
-                
-                NSLog(@"data+++++++++++++++++++为空");
-                NSLog(@"yyyyyyyyyyyyy%@",connectionError);
-                //
-                //           NSLog(@"zzzzzzzzzz%@",response);
-            }
-            
-        }];
+//        NSString *urlString = @"http://192.168.0.156:8080/miningbee-web/ws/userLocation/getNearUser";
+//        urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+//        NSURL *url = [NSURL URLWithString:urlString];
+//        NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+//        request.HTTPMethod = @"POST";
+//        
+//        // 2.设置请求头
+//        [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+//        
+////        NSString *longitude = [NSString stringWithFormat:@"%f",self.longitude];
+////        NSString *latitude = [NSString stringWithFormat:@"%f",self.latitude];
+//    
+//    
+////    NSLog(@"llllll%f%f",self.longitude,self.latitude);
+//    
+//    NSString *lon =  [NSString stringWithFormat:@"%f",self.longitude];
+//    NSString *lat = [NSString stringWithFormat:@"%f",self.latitude];
+//  
+//    NSDictionary *userDic = [[NSUserDefaults standardUserDefaults] objectForKey:@"ResultAuthData"];
+//    NSString *uid = [userDic objectForKey:@"uid"];
+//    NSLog(@"uid++++++++++++++++++%@",uid);
+//    
+//    // 3.设置请求体
+//        NSDictionary *json = @{
+//                               @"uid":uid,
+//                               @"longitude":lon,
+//                               @"latitude":lat,
+//                               };
+//    
+//        //    NSData --> NSDictionary
+//        // NSDictionary --> NSData
+//        NSData *data = [NSJSONSerialization dataWithJSONObject:json options:NSJSONReadingAllowFragments error:nil];
+//        request.HTTPBody = data;
+////        NSLog(@"sssssssss%lu", (unsigned long)data.length);
+//    
+//        // 4.发送请求
+//        [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+//            
+//            if (data) {
+//                NSLog(@"cccccccccccc%lu", (unsigned long)data.length);
+//                //            NSLog(@"data%@",data);
+////                NSString *dataString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+//                
+//               NSMutableDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+//        
+//                NSLog(@"======================");
+//                NSLog(@"%@",dic);
+//                self.dataArr = [dic objectForKey:@"nearUsers"];
+//                NSLog(@"数组长度6666666666=%lu",(unsigned long)self.dataArr.count);
+////                NSLog(@"dataArr%@",dataString);
+//                
+//                
+//                [self biaozhu];
+//            }else{
+//                
+//                NSLog(@"data+++++++++++++++++++为空");
+//                NSLog(@"yyyyyyyyyyyyy%@",connectionError);
+//                //
+//                //           NSLog(@"zzzzzzzzzz%@",response);
+//            }
+//            
+//        }];
 }
 
 
@@ -354,8 +392,8 @@
     NSLog(@"xxxxxxxxxx%f,%f",self.longitude,self.latitude);
 
 
-    #pragma mark ---- 调用地图定位
-//        [self getMap];
+    #pragma mark ---- 调用地图定位  
+    [self getMap];
 
 
     NSLog(@"*******************55555*******************");

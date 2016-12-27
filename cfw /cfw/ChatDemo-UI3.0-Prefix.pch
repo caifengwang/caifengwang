@@ -36,6 +36,8 @@
 
 #define DEMO_CALL 1
 
+
+#import "PNUser.h"
 // 代码约束
 #import "Masonry.h"
 

@@ -13,7 +13,7 @@
 #import <SVProgressHUD.h>
 #define IOS8x ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0)
 #define WebViewNav_TintColor ([UIColor orangeColor])
-#define HomeUrl1    [NSURL URLWithString:@"http://www.caifengwang.cn/mobile/wapautologin/index.php?m="]
+#define HomeUrl1    [NSURL URLWithString:@"http://www.caifengwang.cn/mobile"]
 @interface PNViewDetailController()<WKNavigationDelegate,UIWebViewDelegate,WKUIDelegate>
 @property (nonatomic,strong) WKWebView *WKwebView;
 @property (nonatomic,strong) UIWebView *webView;
@@ -70,6 +70,9 @@
 
 - (void)WebUI{
     
+  
+    
+    
     // 对wkwebview的配置
     WKWebViewConfiguration *config=[[WKWebViewConfiguration alloc]init];
     // 设置偏好设置
@@ -106,8 +109,11 @@
     NSDictionary *dic = [[NSUserDefaults standardUserDefaults]objectForKey:@"ResultAuthData"];
     NSString *name = [dic objectForKey:@"name"];
     
-     [self.WKwebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://www.caifengwang.cn/mobile/wapautologin/index.php?m=%@",name]]]];
-    
+    if (name == nil) {
+        [self.WKwebView loadRequest:[NSURLRequest requestWithURL:HomeUrl1 cachePolicy:1 timeoutInterval:30.0f]];
+    }else{
+     [self.WKwebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://www.caifengwang.cn/mobile/wapautologin/index.php?m=%@",name]]cachePolicy:1 timeoutInterval:30.0f]];
+    }
     
 //    
 //    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];

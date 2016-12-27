@@ -496,6 +496,7 @@
 		F2CA02E11E07B41F00FE96A9 /* LXSegmentScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CA02DD1E07B41F00FE96A9 /* LXSegmentScrollView.m */; };
 		F2CA02F11E07DC2100FE96A9 /* noload.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2CA02F01E07DC2100FE96A9 /* noload.jpg */; };
 		F2D607FB1E10FA68000E7729 /* PNHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D607FA1E10FA68000E7729 /* PNHelpViewController.m */; };
+		F2D607FE1E121AD3000E7729 /* PNUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D607FD1E121AD3000E7729 /* PNUser.m */; };
 		F2E5D2C51DB60F4B0002C23C /* fankui.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E5D2C01DB60F4B0002C23C /* fankui.png */; };
 		F2E5D2C61DB60F4B0002C23C /* guanyu.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E5D2C11DB60F4B0002C23C /* guanyu.png */; };
 		F2E5D2C71DB60F4B0002C23C /* jiaoyi.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E5D2C21DB60F4B0002C23C /* jiaoyi.png */; };
@@ -1299,6 +1300,8 @@
 		F2CA02F01E07DC2100FE96A9 /* noload.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = noload.jpg; sourceTree = "<group>"; };
 		F2D607F91E10FA68000E7729 /* PNHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNHelpViewController.h; sourceTree = "<group>"; };
 		F2D607FA1E10FA68000E7729 /* PNHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNHelpViewController.m; sourceTree = "<group>"; };
+		F2D607FC1E121AD3000E7729 /* PNUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNUser.h; sourceTree = "<group>"; };
+		F2D607FD1E121AD3000E7729 /* PNUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNUser.m; sourceTree = "<group>"; };
 		F2E5D2C01DB60F4B0002C23C /* fankui.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fankui.png; sourceTree = "<group>"; };
 		F2E5D2C11DB60F4B0002C23C /* guanyu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guanyu.png; sourceTree = "<group>"; };
 		F2E5D2C21DB60F4B0002C23C /* jiaoyi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiaoyi.png; sourceTree = "<group>"; };
@@ -2621,6 +2624,8 @@
 		F2B14E711D9908B90087B72D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F2D607FC1E121AD3000E7729 /* PNUser.h */,
+				F2D607FD1E121AD3000E7729 /* PNUser.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -3794,6 +3799,7 @@
 				F2B4D0DD1DC72567004D4EEF /* EMAudioPlayerUtil.m in Sources */,
 				F221FD421E0BA62000915A46 /* PNSettingTableViewController.m in Sources */,
 				F2B4D10F1DC72568004D4EEF /* NSData+EMImageContentType.m in Sources */,
+				F2D607FE1E121AD3000E7729 /* PNUser.m in Sources */,
 				F29E4E201DC866230077921D /* FriendCell.m in Sources */,
 				F2B4D1371DC72568004D4EEF /* EaseLocationViewController.m in Sources */,
 				F28E804F1DCAD3420004C41D /* LoginViewController.m in Sources */,

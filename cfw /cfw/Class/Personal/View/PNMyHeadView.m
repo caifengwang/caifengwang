@@ -10,12 +10,7 @@
 
 
 @interface PNMyHeadView ()
-@property (weak, nonatomic) IBOutlet UIImageView *iconImage;
 
-@property (weak, nonatomic) IBOutlet UILabel *username;
-
-@property (weak, nonatomic) IBOutlet UILabel *userIphoneNum;
-@property (weak, nonatomic) IBOutlet UILabel *authLevel;
 @end
 @implementation PNMyHeadView
 

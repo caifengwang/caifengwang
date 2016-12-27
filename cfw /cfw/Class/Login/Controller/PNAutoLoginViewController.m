@@ -73,9 +73,9 @@
     
     [image setImage:[UIImage imageNamed:@"zhuce_bj"]];
     
-    UILabel *label = [[UILabel alloc]init];
-    label.text = @"请输入手机号登录";
-    label.textColor = [UIColor redColor];
+//    UILabel *label = [[UILabel alloc]init];
+//    label.text = @"请输入手机号登录";
+//    label.textColor = [UIColor redColor];
     
     
     UITextField *textField = [[UITextField alloc]init];
@@ -85,8 +85,14 @@
     textField.layer.borderWidth = 2;
     textField.layer.borderColor = [UIColor grayColor].CGColor;
     textField.placeholder = @"请输入手机号";
+    //  取出用户名name也就是手机号
+    NSDictionary *dic = [[NSUserDefaults standardUserDefaults]objectForKey:@"ResultAuthData"];
     
+    NSString *name = [dic objectForKey:@"name"];
+    textField.text = name;
     
+    UILabel * placeholderLabel = [textField valueForKey:@"_placeholderLabel"];
+    placeholderLabel.textAlignment = NSTextAlignmentCenter;
     UIButton *btn = [[UIButton alloc]init];
     btn.layer.cornerRadius = 10;
     btn.layer.masksToBounds = YES;
@@ -108,7 +114,7 @@
     [self.view addSubview:image];
     [self.view addSubview:btn];
     [self.view addSubview:textField];
-    [self.view addSubview:label];
+//    [self.view addSubview:label];
     [self.view addSubview:btn1];
     
     [btn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -125,15 +131,15 @@
     
     [textField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.view);
-        make.bottom.equalTo(btn).offset(-70);
+        make.top.equalTo(self.view).offset(50);
         make.size.mas_equalTo(CGSizeMake(150, 50));
     }];
     
-    [label mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(self.view);
-        make.bottom.equalTo(textField).offset(-60);
-        make.size.mas_equalTo(CGSizeMake(150, 30));
-    }];
+//    [label mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.centerX.equalTo(self.view);
+//        make.bottom.equalTo(textField).offset(-60);
+//        make.size.mas_equalTo(CGSizeMake(150, 30));
+//    }];
 }
 
 - (void)btnAction1{
@@ -197,15 +203,12 @@
             NSLog(@"========%@",result);
             
 //            NSData *response = [NSURLConnection sendSynchronousRequest:responseObject returningResponse:nil error:nil];
-            //IOS5自带解析类NSJSONSerialization从response中解析出数据放到字典中
+//            //IOS5自带解析类NSJSONSerialization从response中解析出数据放到字典中
             NSDictionary *userDic = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableLeaves error:nil];
             
-            NSString *uid = [userDic objectForKey:@"uid"];
-            
-//            NSDictionary *weatherInfo = [weatherDic objectForKey:@"weatherinfo"];
-            
-//            NSLog(@"weatherDic===%@",weatherDic);
-            
+          NSString *uid = [userDic objectForKey:@"uid"];
+          NSNumber *type = [userDic objectForKey:@"type"];
+          NSLog(@"type++++++++++++++++++++++%@",type);
             // 把后台返回的user信息保存到NSUserDefaults
             
             
@@ -216,7 +219,7 @@
                 NSString *name = [NSString stringWithFormat:@"%@",iPhoneNum.text];
                 NSLog(@"写入之前++++++++++++++++++%@",name);
                 
-                NSDictionary *resultDiction = [NSDictionary dictionaryWithObjectsAndKeys:@"1",@"loginState",name,@"name",uid,@"uid" ,nil];
+                NSDictionary *resultDiction = [NSDictionary dictionaryWithObjectsAndKeys:@"1",@"loginState",name,@"name",uid,@"uid",type,@"type",nil];
                 
                 [[NSUserDefaults standardUserDefaults] setObject:resultDiction forKey:@"ResultAuthData"];
                 //保存数据，实现持久化存储

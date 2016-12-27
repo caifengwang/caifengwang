@@ -36,26 +36,27 @@
      self.tabBarController.tabBar.hidden = NO;
     
     
-    NSDictionary *dic = [[NSUserDefaults standardUserDefaults] objectForKey:@"ResultAuthData"];
-    
-    NSString *result = [dic objectForKey:@"status"];
-    
-    NSLog(@"------------%@",result);
-    
-    if ([result isEqualToString:@"1"]) {
-        
-        UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithTitle:@"已登陆" style:UIBarButtonItemStylePlain target:self action:@selector(rightAction)];
-        self.navigationItem.rightBarButtonItem = rightItem;
-        [SignOutBtn setTitle:@"退出" forState:UIControlStateNormal]; // 设置退出按钮的状态
-    }else if([result isEqualToString:@"0"]){
-        UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithTitle:@"登录" style:UIBarButtonItemStylePlain target:self action:@selector(rightAction)];
-        self.navigationItem.rightBarButtonItem = rightItem;
-        [SignOutBtn setTitle:@"请登录" forState:UIControlStateNormal];
-        
-        
-    }
+//    NSDictionary *dic = [[NSUserDefaults standardUserDefaults] objectForKey:@"ResultAuthData"];
+//    
+//    NSString *result = [dic objectForKey:@"status"];
+//    
+//    NSLog(@"------------%@",result);
+//    
+//    if ([result isEqualToString:@"1"]) {
+//        
+//        UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithTitle:@"已登陆" style:UIBarButtonItemStylePlain target:self action:@selector(rightAction)];
+//        self.navigationItem.rightBarButtonItem = rightItem;
+//        [SignOutBtn setTitle:@"退出" forState:UIControlStateNormal]; // 设置退出按钮的状态
+//    }else if([result isEqualToString:@"0"]){
+//        UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithTitle:@"登录" style:UIBarButtonItemStylePlain target:self action:@selector(rightAction)];
+//        self.navigationItem.rightBarButtonItem = rightItem;
+//        [SignOutBtn setTitle:@"请登录" forState:UIControlStateNormal];
+//        
+//        
+//    }
 
     
+    [self setUpHeadView];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -88,9 +89,35 @@
     
     
     PNMyHeadView *headView = [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([PNMyHeadView class]) owner:nil options:nil].lastObject;
+    
     headView.frame = CGRectMake(0, 0,self.view.bounds.size.width, 70);
-    self.tableView.tableHeaderView = headView;
+  
+        //  取出用户名name也就是手机号
+        NSDictionary *dic = [[NSUserDefaults standardUserDefaults]objectForKey:@"ResultAuthData"];
+        
+        NSString *name = [dic objectForKey:@"name"];
 
+       
+
+    
+            headView.username.text = name;
+            headView.userIphoneNum.text = name;
+            NSNumber *type = [dic objectForKey:@"type"];
+            NSString *types = [NSString stringWithFormat:@"%@",type];
+            
+            NSLog(@"types========++++++++%@",types);
+            if ([types isEqualToString:@"1"]) {
+                headView.authLevel.text = @"游客";
+            }else if ([types isEqualToString:@"2"]){
+                headView.authLevel.text = @"蜂农";
+            }else if([types isEqualToString:@"3"]){
+                headView.authLevel.text = @"蜂企";
+            }
+            
+            [[NSUserDefaults standardUserDefaults] synchronize];
+            
+            
+            self.tableView.tableHeaderView = headView;
 }
 
 - (void)setUpGroup0{
