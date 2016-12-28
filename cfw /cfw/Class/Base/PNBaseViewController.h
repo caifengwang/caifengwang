@@ -10,6 +10,13 @@
 
 @interface PNBaseViewController : UIViewController
 
+
+
+/**
+ *  自定义回调
+ */
+@property (nonatomic, copy) void (^completionBlock)(int tag, id data);
+
 // 设置标题
 - (void)addTitleViewWithTitle:(NSString *)title ;
 // 设置左右按钮

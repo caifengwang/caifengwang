@@ -192,6 +192,9 @@
             }
             else if (indexPath.row == 4){
                 NSLog(@"迁徙服务");
+                
+                PNMigrateServiceViewController *maseVC = [[PNMigrateServiceViewController alloc]init];
+                [self.navigationController pushViewController:maseVC animated:NO];
             }
             else if (indexPath.row == 5){
                 NSLog(@"叫车服务");

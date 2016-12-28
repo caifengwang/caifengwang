@@ -33,8 +33,22 @@
 
 #import "UIColor+Extension.h"
 #import "UIView+Extension.h"
+
+
+// 服务模块
+
+// 迁徙服务头文件
+
+#import "NSString+Extension.h"
+#import "MBProgressHUD.h"
+#import "NSMutableArray+Safety.h"
+#import "XKEditAddressVC.h"
+#import "PNMigrateServiceViewController.h"
+#import "YMAnnotationController.h"
+
 //弹窗
 #import "SRAlertView.h"
+
 
 
 #define DEMO_CALL 1

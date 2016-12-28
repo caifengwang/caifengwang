@@ -10,4 +10,5 @@ pod 'Masonry'
 pod 'BaiduMapKit' #百度地图SDK
 pod 'MBProgressHUD'
 pod 'YWFeedbackFMWK'#阿里百川SDK
+pod 'SDWebImage'
 end

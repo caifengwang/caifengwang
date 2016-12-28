@@ -252,6 +252,18 @@
 		F27ABDFE1E136F4E007E0924 /* jiaobu.png in Resources */ = {isa = PBXBuildFile; fileRef = F27ABDFD1E136F4E007E0924 /* jiaobu.png */; };
 		F27ABE001E136FE9007E0924 /* car.png in Resources */ = {isa = PBXBuildFile; fileRef = F27ABDFF1E136FE9007E0924 /* car.png */; };
 		F27ABE071E13839A007E0924 /* PNMigrateServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F27ABE061E13839A007E0924 /* PNMigrateServiceViewController.m */; };
+		F27ABE0D1E139352007E0924 /* XKEditAddressVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F27ABE0B1E139352007E0924 /* XKEditAddressVC.m */; };
+		F27ABE111E13935D007E0924 /* CityTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F27ABE0F1E13935D007E0924 /* CityTextFieldCell.m */; };
+		F27ABE121E13935D007E0924 /* CityTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F27ABE101E13935D007E0924 /* CityTextFieldCell.xib */; };
+		F27ABE181E139368007E0924 /* NSMutableArray+Safety.m in Sources */ = {isa = PBXBuildFile; fileRef = F27ABE151E139368007E0924 /* NSMutableArray+Safety.m */; };
+		F27ABE191E139368007E0924 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F27ABE171E139368007E0924 /* NSString+Extension.m */; };
+		F27ABE1B1E139896007E0924 /* city.plist in Resources */ = {isa = PBXBuildFile; fileRef = F27ABE1A1E139896007E0924 /* city.plist */; };
+		F27ABE1E1E13A677007E0924 /* YMAnnotationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F27ABE1D1E13A677007E0924 /* YMAnnotationController.m */; };
+		F27ABE231E13A6B1007E0924 /* YMPoi.m in Sources */ = {isa = PBXBuildFile; fileRef = F27ABE201E13A6B1007E0924 /* YMPoi.m */; };
+		F27ABE241E13A6B1007E0924 /* YMPointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F27ABE221E13A6B1007E0924 /* YMPointAnnotation.m */; };
+		F27ABE2A1E13A6D1007E0924 /* YMAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = F27ABE261E13A6D1007E0924 /* YMAnnotationView.m */; };
+		F27ABE2B1E13A6D1007E0924 /* YMPaopaoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F27ABE281E13A6D1007E0924 /* YMPaopaoView.m */; };
+		F27ABE2C1E13A6D1007E0924 /* YMPaopaoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F27ABE291E13A6D1007E0924 /* YMPaopaoView.xib */; };
 		F281C95A1DA1F949000594DE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F281C9591DA1F949000594DE /* libz.tbd */; };
 		F281C95C1DA1F961000594DE /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F281C95B1DA1F961000594DE /* libicucore.tbd */; };
 		F281C95E1DA1F96C000594DE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F281C95D1DA1F96C000594DE /* MessageUI.framework */; };
@@ -836,6 +848,27 @@
 		F27ABDFF1E136FE9007E0924 /* car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car.png; sourceTree = "<group>"; };
 		F27ABE051E13839A007E0924 /* PNMigrateServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNMigrateServiceViewController.h; sourceTree = "<group>"; };
 		F27ABE061E13839A007E0924 /* PNMigrateServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNMigrateServiceViewController.m; sourceTree = "<group>"; };
+		F27ABE0A1E139352007E0924 /* XKEditAddressVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XKEditAddressVC.h; sourceTree = "<group>"; };
+		F27ABE0B1E139352007E0924 /* XKEditAddressVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XKEditAddressVC.m; sourceTree = "<group>"; };
+		F27ABE0E1E13935D007E0924 /* CityTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityTextFieldCell.h; sourceTree = "<group>"; };
+		F27ABE0F1E13935D007E0924 /* CityTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityTextFieldCell.m; sourceTree = "<group>"; };
+		F27ABE101E13935D007E0924 /* CityTextFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityTextFieldCell.xib; sourceTree = "<group>"; };
+		F27ABE141E139368007E0924 /* NSMutableArray+Safety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Safety.h"; sourceTree = "<group>"; };
+		F27ABE151E139368007E0924 /* NSMutableArray+Safety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Safety.m"; sourceTree = "<group>"; };
+		F27ABE161E139368007E0924 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		F27ABE171E139368007E0924 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		F27ABE1A1E139896007E0924 /* city.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = city.plist; sourceTree = "<group>"; };
+		F27ABE1C1E13A677007E0924 /* YMAnnotationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMAnnotationController.h; sourceTree = "<group>"; };
+		F27ABE1D1E13A677007E0924 /* YMAnnotationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMAnnotationController.m; sourceTree = "<group>"; };
+		F27ABE1F1E13A6B1007E0924 /* YMPoi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMPoi.h; sourceTree = "<group>"; };
+		F27ABE201E13A6B1007E0924 /* YMPoi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMPoi.m; sourceTree = "<group>"; };
+		F27ABE211E13A6B1007E0924 /* YMPointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMPointAnnotation.h; sourceTree = "<group>"; };
+		F27ABE221E13A6B1007E0924 /* YMPointAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMPointAnnotation.m; sourceTree = "<group>"; };
+		F27ABE251E13A6D1007E0924 /* YMAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMAnnotationView.h; sourceTree = "<group>"; };
+		F27ABE261E13A6D1007E0924 /* YMAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMAnnotationView.m; sourceTree = "<group>"; };
+		F27ABE271E13A6D1007E0924 /* YMPaopaoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMPaopaoView.h; sourceTree = "<group>"; };
+		F27ABE281E13A6D1007E0924 /* YMPaopaoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMPaopaoView.m; sourceTree = "<group>"; };
+		F27ABE291E13A6D1007E0924 /* YMPaopaoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMPaopaoView.xib; sourceTree = "<group>"; };
 		F281C9591DA1F949000594DE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		F281C95B1DA1F961000594DE /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		F281C95D1DA1F96C000594DE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -2321,6 +2354,8 @@
 		F27ABE011E13833A007E0924 /* MigrateService */ = {
 			isa = PBXGroup;
 			children = (
+				F27ABE1A1E139896007E0924 /* city.plist */,
+				F27ABE131E139368007E0924 /* Category */,
 				F27ABE021E13836B007E0924 /* Controller */,
 				F27ABE031E13836B007E0924 /* Model */,
 				F27ABE041E13836B007E0924 /* View */,
@@ -2331,8 +2366,12 @@
 		F27ABE021E13836B007E0924 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F27ABE1C1E13A677007E0924 /* YMAnnotationController.h */,
+				F27ABE1D1E13A677007E0924 /* YMAnnotationController.m */,
 				F27ABE051E13839A007E0924 /* PNMigrateServiceViewController.h */,
 				F27ABE061E13839A007E0924 /* PNMigrateServiceViewController.m */,
+				F27ABE0A1E139352007E0924 /* XKEditAddressVC.h */,
+				F27ABE0B1E139352007E0924 /* XKEditAddressVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -2340,6 +2379,10 @@
 		F27ABE031E13836B007E0924 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F27ABE1F1E13A6B1007E0924 /* YMPoi.h */,
+				F27ABE201E13A6B1007E0924 /* YMPoi.m */,
+				F27ABE211E13A6B1007E0924 /* YMPointAnnotation.h */,
+				F27ABE221E13A6B1007E0924 /* YMPointAnnotation.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -2347,8 +2390,27 @@
 		F27ABE041E13836B007E0924 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F27ABE251E13A6D1007E0924 /* YMAnnotationView.h */,
+				F27ABE261E13A6D1007E0924 /* YMAnnotationView.m */,
+				F27ABE271E13A6D1007E0924 /* YMPaopaoView.h */,
+				F27ABE281E13A6D1007E0924 /* YMPaopaoView.m */,
+				F27ABE291E13A6D1007E0924 /* YMPaopaoView.xib */,
+				F27ABE0E1E13935D007E0924 /* CityTextFieldCell.h */,
+				F27ABE0F1E13935D007E0924 /* CityTextFieldCell.m */,
+				F27ABE101E13935D007E0924 /* CityTextFieldCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F27ABE131E139368007E0924 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F27ABE141E139368007E0924 /* NSMutableArray+Safety.h */,
+				F27ABE151E139368007E0924 /* NSMutableArray+Safety.m */,
+				F27ABE161E139368007E0924 /* NSString+Extension.h */,
+				F27ABE171E139368007E0924 /* NSString+Extension.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		F281C9631DA255E2000594DE /* Sub */ = {
@@ -3497,6 +3559,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F283F5381DD2B80C00F14227 /* w27.png in Resources */,
+				F27ABE2C1E13A6D1007E0924 /* YMPaopaoView.xib in Resources */,
 				F25567B11D962E63000E8369 /* item_user_on@2x.png in Resources */,
 				F25567B21D962E63000E8369 /* lab.png in Resources */,
 				F25567AF1D962E63000E8369 /* item_store_on@2x.png in Resources */,
@@ -3585,6 +3648,7 @@
 				F26D660B1DC72C5A008F9434 /* InfoPlist.strings in Resources */,
 				F283F5321DD2B80C00F14227 /* w21.png in Resources */,
 				F22DF0181DCB22E40019A89D /* chat_sender_audio_playing_001@2x.png in Resources */,
+				F27ABE1B1E139896007E0924 /* city.plist in Resources */,
 				F22DEFF71DCB22E40019A89D /* 80.png in Resources */,
 				F25567AA1D962E63000E8369 /* item_main_off@2x.png in Resources */,
 				F22DF03F1DCB22E40019A89D /* account@2x.png in Resources */,
@@ -3725,6 +3789,7 @@
 				F22DF0221DCB22E40019A89D /* icon_010.gif in Resources */,
 				F25567A31D962E63000E8369 /* botm_7.png in Resources */,
 				F261401C1D9A000D00299AE9 /* PNMyHeadView.xib in Resources */,
+				F27ABE121E13935D007E0924 /* CityTextFieldCell.xib in Resources */,
 				F22DF0121DCB22E40019A89D /* chat_receiver_audio_playing002@2x.png in Resources */,
 				F22DF05A1DCB22E40019A89D /* tabbar_setting.png in Resources */,
 				F22DF00F1DCB22E40019A89D /* messageSendFail@2x.png in Resources */,
@@ -3825,6 +3890,7 @@
 				F2B4D14B1DC72568004D4EEF /* EaseImageView.m in Sources */,
 				F2B4D13F1DC72568004D4EEF /* EaseMessageCell.m in Sources */,
 				F2B4D1061DC72567004D4EEF /* DACircularProgressView.m in Sources */,
+				F27ABE241E13A6B1007E0924 /* YMPointAnnotation.m in Sources */,
 				F2B4D1431DC72568004D4EEF /* EaseBubbleView+Image.m in Sources */,
 				F28E80421DCAD3420004C41D /* RealtimeSearchUtil.m in Sources */,
 				F2B4D1401DC72568004D4EEF /* EaseMessageTimeCell.m in Sources */,
@@ -3848,6 +3914,7 @@
 				F2B4D1011DC72567004D4EEF /* MWPhoto.m in Sources */,
 				F2B4D0EF1DC72567004D4EEF /* MJRefreshHeader.m in Sources */,
 				F26D66261DC72D16008F9434 /* EMAlertView.m in Sources */,
+				F27ABE2A1E13A6D1007E0924 /* YMAnnotationView.m in Sources */,
 				F221FD3F1E0BA5DA00915A46 /* UIView+Extension.m in Sources */,
 				F2B4D13D1DC72568004D4EEF /* EaseBaseMessageCell.m in Sources */,
 				F28E803A1DCAD3420004C41D /* ChatroomListViewController.m in Sources */,
@@ -3929,6 +3996,7 @@
 				F27ABDF71E136877007E0924 /* PNCallCarViewController.m in Sources */,
 				F229DFFD1D966BF300AA8172 /* UIView+Extension.m in Sources */,
 				F2B4D0FC1DC72567004D4EEF /* UIScrollView+MJRefresh.m in Sources */,
+				F27ABE191E139368007E0924 /* NSString+Extension.m in Sources */,
 				F2B4D0F11DC72567004D4EEF /* MJRefreshAutoNormalFooter.m in Sources */,
 				F2CA02E01E07B41F00FE96A9 /* LiuXSegmentView.m in Sources */,
 				F261401F1D9A060C00299AE9 /* GPSettingController.m in Sources */,
@@ -3936,13 +4004,16 @@
 				F2B4D0F81DC72567004D4EEF /* MJRefreshStateHeader.m in Sources */,
 				F2B4D1031DC72567004D4EEF /* MWTapDetectingImageView.m in Sources */,
 				F2B4D1001DC72567004D4EEF /* MWGridViewController.m in Sources */,
+				F27ABE0D1E139352007E0924 /* XKEditAddressVC.m in Sources */,
 				F26D662D1DC72D16008F9434 /* TTGlobalUICommon.m in Sources */,
+				F27ABE111E13935D007E0924 /* CityTextFieldCell.m in Sources */,
 				F221FD4F1E0BADE500915A46 /* PNFengNongViewController.m in Sources */,
 				F2B4D12C1DC72568004D4EEF /* UIViewController+DismissKeyboard.m in Sources */,
 				F2B4D1221DC72568004D4EEF /* PSTGridLayoutRow.m in Sources */,
 				F28E804E1DCAD3420004C41D /* EMTextView.m in Sources */,
 				F28E80531DCAD3420004C41D /* BaseViewController.m in Sources */,
 				F25567201D962247000E8369 /* PNShopViewController.m in Sources */,
+				F27ABE181E139368007E0924 /* NSMutableArray+Safety.m in Sources */,
 				F2B4D1471DC72568004D4EEF /* EaseBubbleView+Voice.m in Sources */,
 				F2B4D0E31DC72567004D4EEF /* EMCDDeviceManagerBase.m in Sources */,
 				F2CA02DF1E07B41F00FE96A9 /* NSString+Size.m in Sources */,
@@ -3972,6 +4043,7 @@
 				F2B4D1101DC72568004D4EEF /* UIButton+EMWebCache.m in Sources */,
 				F2B4D1201DC72568004D4EEF /* PSTGridLayoutInfo.m in Sources */,
 				F2B4D0EB1DC72567004D4EEF /* MJRefreshAutoFooter.m in Sources */,
+				F27ABE1E1E13A677007E0924 /* YMAnnotationController.m in Sources */,
 				F221FD3D1E0BA5DA00915A46 /* PageTitleView.m in Sources */,
 				F28E802F1DCAD3420004C41D /* ContactView.m in Sources */,
 				F2B4D0E21DC72567004D4EEF /* EMCDDeviceManager+Remind.m in Sources */,
@@ -3981,6 +4053,7 @@
 				F2B4D0E01DC72567004D4EEF /* EMCDDeviceManager+Microphone.m in Sources */,
 				F28E803C1DCAD3420004C41D /* ContactListSelectViewController.m in Sources */,
 				F296B17B1DC1AE0B006385BD /* JHCustomMenu.m in Sources */,
+				F27ABE2B1E13A6D1007E0924 /* YMPaopaoView.m in Sources */,
 				F28E80521DCAD3420004C41D /* EMRemarkImageView.m in Sources */,
 				F2B4D1181DC72568004D4EEF /* PSTCollectionView.m in Sources */,
 				F2B4D13E1DC72568004D4EEF /* EaseCustomMessageCell.m in Sources */,
@@ -3995,6 +4068,7 @@
 				F2B4D10D1DC72568004D4EEF /* EMSDWebImagePrefetcher.m in Sources */,
 				F2B4D11C1DC72568004D4EEF /* PSTCollectionViewFlowLayout.m in Sources */,
 				F221FD571E0CD80E00915A46 /* AKSegmentedControl.m in Sources */,
+				F27ABE231E13A6B1007E0924 /* YMPoi.m in Sources */,
 				F2B4D1191DC72568004D4EEF /* PSTCollectionViewCell.m in Sources */,
 				F25566DF1D9607B6000E8369 /* main.m in Sources */,
 				F26140171D99FFB800299AE9 /* PNMyTableViewController.m in Sources */,

@@ -19,6 +19,9 @@ PODS:
     - UTDID
   - Masonry (1.0.2)
   - MBProgressHUD (1.0.0)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
   - SVProgressHUD (2.0.3)
   - UTDID (1.1.0.16)
   - YWFeedbackFMWK (1.1.1.1):
@@ -29,6 +32,7 @@ DEPENDENCIES:
   - BaiduMapKit
   - Masonry
   - MBProgressHUD
+  - SDWebImage
   - SVProgressHUD
   - YWFeedbackFMWK
 
@@ -38,10 +42,11 @@ SPEC CHECKSUMS:
   BCUserTrack: 729ae7c725f6fadb7f07292a156fd5d3364d0e5c
   Masonry: 51cb76bcc3fea78dad2c7f2ae97c6ec5c0f5c102
   MBProgressHUD: 3a0586c59f596fc6c20a64e56c65b8207541addc
+  SDWebImage: 0cc54efd4cbf0bc8ddba69fd8df8b8873ebf1e4c
   SVProgressHUD: 50371a8e908885e25652cf8f6e9cb1ff68510d56
   UTDID: c28855683c5ea2e77e597cb14609328f7d470d6e
   YWFeedbackFMWK: f9afffa0b0d959126a7b9a229dbb63745adde511
 
-PODFILE CHECKSUM: f160ee24cecd818fd1fc7d21488d93eeb4f7e07d
+PODFILE CHECKSUM: 0b150cf25bb7e6d6c6c9cf469150da1a432e5ae3
 
 COCOAPODS: 1.0.1
