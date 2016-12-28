@@ -210,6 +210,11 @@
 
 - (void)signOut:(UIButton *)btn{
     NSLog(@"点击了退出按钮");
+    EMError * error = [[EMClient sharedClient] logout:YES];
+    if (!error)
+    {
+        NSLog(@"退出成功");
+    }
     
     
 
