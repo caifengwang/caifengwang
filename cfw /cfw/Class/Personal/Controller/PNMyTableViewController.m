@@ -142,6 +142,18 @@
             else if (indexPath.row == 1)
             {
                 NSLog(@"点击了专家问诊");
+//                UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"警告" message:@"非法操作" preferredStyle:UIAlertControllerStyleAlert];
+//                [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//                    
+//                }]];
+//                [self presentViewController:alert animated:true completion:nil];
+                [SRAlertView sr_showAlertViewWithTitle:@"提醒"
+                                               message:@"程序猿正在玩命开发，敬请期待"
+                                       leftActionTitle:@"确定"
+                                      rightActionTitle:@"取消"
+                                        animationStyle:AlertViewAnimationDownToCenterSpring
+                                              delegate:self];
+                
             }
             else if (indexPath.row == 2)
             {

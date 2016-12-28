@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		353746DD6E5052BFB5EA092E /* libPods-cfw.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC267FC216B45F1208097CD /* libPods-cfw.a */; };
+		C4DBA0C71E137C7300D97728 /* SRAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DBA0C61E137C7300D97728 /* SRAlertView.m */; };
+		C4DBA0CB1E137CFC00D97728 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DBA0C91E137CFC00D97728 /* FXBlurView.m */; };
 		F219880B1E0E751900260278 /* PNMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F21988081E0E751900260278 /* PNMapViewController.m */; };
 		F221FD3C1E0BA5DA00915A46 /* PageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = F221FD351E0BA5DA00915A46 /* PageContentView.m */; };
 		F221FD3D1E0BA5DA00915A46 /* PageTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F221FD371E0BA5DA00915A46 /* PageTitleView.m */; };
@@ -525,6 +527,10 @@
 		60CD9F4BCB333625E40DC158 /* Pods-cfw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cfw.release.xcconfig"; path = "Pods/Target Support Files/Pods-cfw/Pods-cfw.release.xcconfig"; sourceTree = "<group>"; };
 		6FB51A39BFD280A7D820DA89 /* Pods-cfw.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cfw.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cfw/Pods-cfw.debug.xcconfig"; sourceTree = "<group>"; };
 		BDC267FC216B45F1208097CD /* libPods-cfw.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-cfw.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4DBA0C51E137C7300D97728 /* SRAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRAlertView.h; sourceTree = "<group>"; };
+		C4DBA0C61E137C7300D97728 /* SRAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRAlertView.m; sourceTree = "<group>"; };
+		C4DBA0C81E137CFC00D97728 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
+		C4DBA0C91E137CFC00D97728 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
 		F21988071E0E751900260278 /* PNMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNMapViewController.h; sourceTree = "<group>"; };
 		F21988081E0E751900260278 /* PNMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNMapViewController.m; sourceTree = "<group>"; };
 		F221FD341E0BA5DA00915A46 /* PageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentView.h; sourceTree = "<group>"; };
@@ -1972,6 +1978,10 @@
 		F26140131D99FF4700299AE9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C4DBA0C81E137CFC00D97728 /* FXBlurView.h */,
+				C4DBA0C91E137CFC00D97728 /* FXBlurView.m */,
+				C4DBA0C51E137C7300D97728 /* SRAlertView.h */,
+				C4DBA0C61E137C7300D97728 /* SRAlertView.m */,
 				F230FE1A1DB869D9007F6DDA /* CBTextView.h */,
 				F230FE1B1DB869D9007F6DDA /* CBTextView.m */,
 				F2459EEC1D9B51C100DD5B8E /* user_photo.png */,
@@ -3737,6 +3747,7 @@
 				F261403D1D9A535600299AE9 /* PNiphoneNumber.m in Sources */,
 				F28E80441DCAD3420004C41D /* UserProfileManager.m in Sources */,
 				F221FD531E0BADE500915A46 /* PNPerfectInfoViewController.m in Sources */,
+				C4DBA0C71E137C7300D97728 /* SRAlertView.m in Sources */,
 				F28E80311DCAD3420004C41D /* GroupBansViewController.m in Sources */,
 				F2B4D1381DC72568004D4EEF /* EaseMessageViewController.m in Sources */,
 				F2B4D12E1DC72568004D4EEF /* EaseChineseToPinyin.m in Sources */,
@@ -3792,6 +3803,7 @@
 				F2B4D11A1DC72568004D4EEF /* PSTCollectionViewController.m in Sources */,
 				F2B4D1021DC72567004D4EEF /* MWPhotoBrowser.m in Sources */,
 				F28E80291DCAD3420004C41D /* UIViewController+HUD.m in Sources */,
+				C4DBA0CB1E137CFC00D97728 /* FXBlurView.m in Sources */,
 				F229DFCD1D9657CE00AA8172 /* PNTabBarViewController.m in Sources */,
 				F2B4D1391DC72568004D4EEF /* EaseRefreshTableViewController.m in Sources */,
 				F2B4D0EC1DC72567004D4EEF /* MJRefreshBackFooter.m in Sources */,
@@ -4111,6 +4123,7 @@
 					"$(PROJECT_DIR)/cfw/Class/Chat/3rdparty/Parse",
 					"$(PROJECT_DIR)/cfw/Resource/SMS_SDK",
 					"$(PROJECT_DIR)/cfw/Class/Chat/huanxin/3rdparty/Parse",
+					"$(PROJECT_DIR)/cfw/Class/Personal/View",
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_INPUT_FILETYPE = automatic;
@@ -4154,6 +4167,7 @@
 					"$(PROJECT_DIR)/cfw/Class/Chat/3rdparty/Parse",
 					"$(PROJECT_DIR)/cfw/Resource/SMS_SDK",
 					"$(PROJECT_DIR)/cfw/Class/Chat/huanxin/3rdparty/Parse",
+					"$(PROJECT_DIR)/cfw/Class/Personal/View",
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_INPUT_FILETYPE = automatic;
