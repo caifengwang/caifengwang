@@ -70,11 +70,14 @@
     [self setUpFootView];
     
     
+    
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     
-    self.tableView.contentSize = CGSizeMake(0, SCREEN_HEIGHT);
+    [self.tableView setContentOffset:CGPointMake(0,-64) animated:YES];
+    
+    self.tableView.contentSize = CGSizeMake(0, SCREEN_HEIGHT - 20);
 }
 
 - (void)rightAction{
