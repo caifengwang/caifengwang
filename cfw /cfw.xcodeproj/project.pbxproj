@@ -246,6 +246,12 @@
 		F26D662D1DC72D16008F9434 /* TTGlobalUICommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F26D66211DC72D16008F9434 /* TTGlobalUICommon.m */; };
 		F26D662E1DC72D16008F9434 /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F26D66231DC72D16008F9434 /* libMobClickLibrary.a */; };
 		F27ABB311E0A19DC0046A8AD /* PNtestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F27ABB301E0A19DC0046A8AD /* PNtestViewController.m */; };
+		F27ABDF71E136877007E0924 /* PNCallCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F27ABDF61E136877007E0924 /* PNCallCarViewController.m */; };
+		F27ABDFB1E136AC6007E0924 /* PNCarTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F27ABDF91E136AC6007E0924 /* PNCarTypeCell.m */; };
+		F27ABDFC1E136AC6007E0924 /* PNCarTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F27ABDFA1E136AC6007E0924 /* PNCarTypeCell.xib */; };
+		F27ABDFE1E136F4E007E0924 /* jiaobu.png in Resources */ = {isa = PBXBuildFile; fileRef = F27ABDFD1E136F4E007E0924 /* jiaobu.png */; };
+		F27ABE001E136FE9007E0924 /* car.png in Resources */ = {isa = PBXBuildFile; fileRef = F27ABDFF1E136FE9007E0924 /* car.png */; };
+		F27ABE071E13839A007E0924 /* PNMigrateServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F27ABE061E13839A007E0924 /* PNMigrateServiceViewController.m */; };
 		F281C95A1DA1F949000594DE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F281C9591DA1F949000594DE /* libz.tbd */; };
 		F281C95C1DA1F961000594DE /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F281C95B1DA1F961000594DE /* libicucore.tbd */; };
 		F281C95E1DA1F96C000594DE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F281C95D1DA1F96C000594DE /* MessageUI.framework */; };
@@ -821,6 +827,15 @@
 		F26D66251DC72D16008F9434 /* MobClickSocialAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClickSocialAnalytics.h; sourceTree = "<group>"; };
 		F27ABB2F1E0A19DC0046A8AD /* PNtestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNtestViewController.h; sourceTree = "<group>"; };
 		F27ABB301E0A19DC0046A8AD /* PNtestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNtestViewController.m; sourceTree = "<group>"; };
+		F27ABDF51E136877007E0924 /* PNCallCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNCallCarViewController.h; sourceTree = "<group>"; };
+		F27ABDF61E136877007E0924 /* PNCallCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNCallCarViewController.m; sourceTree = "<group>"; };
+		F27ABDF81E136AC6007E0924 /* PNCarTypeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNCarTypeCell.h; sourceTree = "<group>"; };
+		F27ABDF91E136AC6007E0924 /* PNCarTypeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNCarTypeCell.m; sourceTree = "<group>"; };
+		F27ABDFA1E136AC6007E0924 /* PNCarTypeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PNCarTypeCell.xib; sourceTree = "<group>"; };
+		F27ABDFD1E136F4E007E0924 /* jiaobu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiaobu.png; sourceTree = "<group>"; };
+		F27ABDFF1E136FE9007E0924 /* car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car.png; sourceTree = "<group>"; };
+		F27ABE051E13839A007E0924 /* PNMigrateServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNMigrateServiceViewController.h; sourceTree = "<group>"; };
+		F27ABE061E13839A007E0924 /* PNMigrateServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNMigrateServiceViewController.m; sourceTree = "<group>"; };
 		F281C9591DA1F949000594DE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		F281C95B1DA1F961000594DE /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		F281C95D1DA1F96C000594DE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -1947,6 +1962,8 @@
 		F261400F1D99FF4700299AE9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F27ABDFF1E136FE9007E0924 /* car.png */,
+				F27ABDFD1E136F4E007E0924 /* jiaobu.png */,
 				F2E5D2CA1DB610810002C23C /* xiaoxi.png */,
 				F2E5D2C01DB60F4B0002C23C /* fankui.png */,
 				F2E5D2C11DB60F4B0002C23C /* guanyu.png */,
@@ -2265,9 +2282,80 @@
 			path = UMeng;
 			sourceTree = "<group>";
 		};
+		F27ABDE51E1366EE007E0924 /* CallCar */ = {
+			isa = PBXGroup;
+			children = (
+				F27ABDEF1E136851007E0924 /* Controller */,
+				F27ABDF21E136851007E0924 /* Model */,
+				F27ABDF31E136851007E0924 /* View */,
+			);
+			path = CallCar;
+			sourceTree = "<group>";
+		};
+		F27ABDEF1E136851007E0924 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F27ABDF51E136877007E0924 /* PNCallCarViewController.h */,
+				F27ABDF61E136877007E0924 /* PNCallCarViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F27ABDF21E136851007E0924 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F27ABDF31E136851007E0924 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F27ABDF81E136AC6007E0924 /* PNCarTypeCell.h */,
+				F27ABDF91E136AC6007E0924 /* PNCarTypeCell.m */,
+				F27ABDFA1E136AC6007E0924 /* PNCarTypeCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F27ABE011E13833A007E0924 /* MigrateService */ = {
+			isa = PBXGroup;
+			children = (
+				F27ABE021E13836B007E0924 /* Controller */,
+				F27ABE031E13836B007E0924 /* Model */,
+				F27ABE041E13836B007E0924 /* View */,
+			);
+			path = MigrateService;
+			sourceTree = "<group>";
+		};
+		F27ABE021E13836B007E0924 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F27ABE051E13839A007E0924 /* PNMigrateServiceViewController.h */,
+				F27ABE061E13839A007E0924 /* PNMigrateServiceViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F27ABE031E13836B007E0924 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F27ABE041E13836B007E0924 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F281C9631DA255E2000594DE /* Sub */ = {
 			isa = PBXGroup;
 			children = (
+				F27ABE011E13833A007E0924 /* MigrateService */,
+				F27ABDE51E1366EE007E0924 /* CallCar */,
 				F221FD331E0BA5DA00915A46 /* pageView */,
 				F221FD311E0BA54400915A46 /* SettingView */,
 				F2CA02D41E07B41F00FE96A9 /* LXSegment */,
@@ -3484,6 +3572,7 @@
 				F2B4D0F91DC72567004D4EEF /* MJRefresh.bundle in Resources */,
 				F25567A61D962E63000E8369 /* Default.png in Resources */,
 				F22DF01F1DCB22E40019A89D /* icon_002_cover.png in Resources */,
+				F27ABDFC1E136AC6007E0924 /* PNCarTypeCell.xib in Resources */,
 				F255679B1D962E63000E8369 /* bj_chose.png in Resources */,
 				F29E4E2A1DC869B60077921D /* ico_list.png in Resources */,
 				F22DF0511DCB22E40019A89D /* newFriends@2x.png in Resources */,
@@ -3491,6 +3580,7 @@
 				F22DF0231DCB22E40019A89D /* icon_010_cover.png in Resources */,
 				F22DF0111DCB22E40019A89D /* chat_receiver_audio_playing001@2x.png in Resources */,
 				F26140351D9A4C0B00299AE9 /* zhuce_bj.png in Resources */,
+				F27ABE001E136FE9007E0924 /* car.png in Resources */,
 				F296B1861DC1AE65006385BD /* item_share@2x.png in Resources */,
 				F26D660B1DC72C5A008F9434 /* InfoPlist.strings in Resources */,
 				F283F5321DD2B80C00F14227 /* w21.png in Resources */,
@@ -3617,6 +3707,7 @@
 				F296B1681DC19653006385BD /* segmented-bg-pressed-center.png in Resources */,
 				F22DF00C1DCB22E40019A89D /* faceDelete.png in Resources */,
 				F255679F1D962E63000E8369 /* botm_3.png in Resources */,
+				F27ABDFE1E136F4E007E0924 /* jiaobu.png in Resources */,
 				F22DEFFC1DCB22E40019A89D /* call_out_h.png in Resources */,
 				F25567C01D962E63000E8369 /* welcome.png in Resources */,
 				F25567B61D962E63000E8369 /* login_btn1@3x.png in Resources */,
@@ -3753,6 +3844,7 @@
 				F2B4D12E1DC72568004D4EEF /* EaseChineseToPinyin.m in Sources */,
 				F2B4D12A1DC72568004D4EEF /* NSDateFormatter+Category.m in Sources */,
 				F28E80321DCAD3420004C41D /* GroupListViewController.m in Sources */,
+				F27ABDFB1E136AC6007E0924 /* PNCarTypeCell.m in Sources */,
 				F2B4D1011DC72567004D4EEF /* MWPhoto.m in Sources */,
 				F2B4D0EF1DC72567004D4EEF /* MJRefreshHeader.m in Sources */,
 				F26D66261DC72D16008F9434 /* EMAlertView.m in Sources */,
@@ -3834,6 +3926,7 @@
 				F2B4D1111DC72568004D4EEF /* UIImage+EMGIF.m in Sources */,
 				F28E804A1DCAD3420004C41D /* SettingsViewController.m in Sources */,
 				F26140261D9A061D00299AE9 /* GPSettingGroup.m in Sources */,
+				F27ABDF71E136877007E0924 /* PNCallCarViewController.m in Sources */,
 				F229DFFD1D966BF300AA8172 /* UIView+Extension.m in Sources */,
 				F2B4D0FC1DC72567004D4EEF /* UIScrollView+MJRefresh.m in Sources */,
 				F2B4D0F11DC72567004D4EEF /* MJRefreshAutoNormalFooter.m in Sources */,
@@ -3929,6 +4022,7 @@
 				F2B4D1321DC72568004D4EEF /* EaseEmojiEmoticons.m in Sources */,
 				F2B4D14E1DC72568004D4EEF /* EaseFacialView.m in Sources */,
 				F2B4D1151DC72568004D4EEF /* UIImageView+EMWebCache.m in Sources */,
+				F27ABE071E13839A007E0924 /* PNMigrateServiceViewController.m in Sources */,
 				F2B4D0E11DC72567004D4EEF /* EMCDDeviceManager+ProximitySensor.m in Sources */,
 				F2B4D1491DC72568004D4EEF /* EaseChatToolbar.m in Sources */,
 				F2B4D0F61DC72567004D4EEF /* MJRefreshGifHeader.m in Sources */,

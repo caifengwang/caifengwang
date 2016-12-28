@@ -15,7 +15,7 @@
 #import "WXDataService.h"
 #import "PNiphoneNumber.h"
 #import "RegistrationVC.h"
-@interface PNAutoLoginViewController ()
+@interface PNAutoLoginViewController ()<UITextFieldDelegate>
 {
     UIImageView *image;
 
@@ -80,6 +80,7 @@
     
     UITextField *textField = [[UITextField alloc]init];
     textField.tag = 100;
+    textField.delegate = self;
     textField.layer.cornerRadius = 10;
     textField.layer.masksToBounds = YES;
     textField.layer.borderWidth = 2;
@@ -131,7 +132,7 @@
     
     [textField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.view);
-        make.top.equalTo(self.view).offset(50);
+        make.bottom.equalTo(btn).offset(-60);
         make.size.mas_equalTo(CGSizeMake(150, 50));
     }];
     
@@ -316,6 +317,70 @@
 
 }
 
+#pragma mark --- TextFieldDelegate
+
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField{
+    
+    CGRect frame = textField.frame;
+    int offset = frame.origin.y + 90 - (self.view.frame.size.height - 216.0);//键盘高度216
+    NSTimeInterval animationDuration = 0.30f;
+    [UIView beginAnimations:@"ResizeForKeyBoard" context:nil];
+    [UIView setAnimationDuration:animationDuration];
+    float width = self.view.frame.size.width;
+    float height = self.view.frame.size.height;
+    if(offset > 0)
+    {
+        CGRect rect = CGRectMake(0.0f, -offset,width,height);
+        self.view.frame = rect;
+    }
+    [UIView commitAnimations];
+    
+    
+}
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    
+    
+    NSTimeInterval animationDuration = 0.30f;
+    [UIView beginAnimations:@"ResizeForKeyboard" context:nil];
+    [UIView setAnimationDuration:animationDuration];
+    CGRect rect = CGRectMake(0.0f, 0.0f, self.view.frame.size.width, self.view.frame.size.height);
+    self.view.frame = rect;
+    [UIView commitAnimations];
+    //    [textField resignFirstResponder];
+    
+    [self.view endEditing:YES];
+}
+
+- (void)keyboardWillShow:(NSNotification *)noti
+{
+    //键盘输入的界面调整
+    //键盘的高度
+    float height = 216.0;
+    CGRect frame = self.view.frame;
+    frame.size = CGSizeMake(frame.size.width, frame.size.height - height);
+    [UIView beginAnimations:@"Curl"context:nil];//动画开始
+    [UIView setAnimationDuration:0.30];
+    [UIView setAnimationDelegate:self];
+    [self.view setFrame:frame];
+    [UIView commitAnimations];
+}
+
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    // When the user presses return, take focus away from the text field so that the keyboard is dismissed.
+    NSTimeInterval animationDuration = 0.30f;
+    [UIView beginAnimations:@"ResizeForKeyboard" context:nil];
+    [UIView setAnimationDuration:animationDuration];
+    CGRect rect = CGRectMake(0.0f, 0.0f, self.view.frame.size.width, self.view.frame.size.height);
+    self.view.frame = rect;
+    [UIView commitAnimations];
+    [textField resignFirstResponder];
+    return YES;
+}
+
 
 #pragma lazy
 
@@ -324,11 +389,6 @@
         _userTel = [[NSString alloc]init];
     }
     return _userTel;
-}
-
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [self.view endEditing:YES];
 }
 
 

@@ -39,6 +39,8 @@
 
 #define DEMO_CALL 1
 
+// 基类
+#import "PNBaseViewController.h"
 
 #import "PNUser.h"
 // 代码约束
