@@ -16,7 +16,7 @@
 //#import "PNAutoLoginViewController.h"
 //#import "PNRegisterViewController.h"
 #import "RegistrationVC.h"
-#import "PNChatViewController.h"
+#import "PNForumViewController.h"
 #import "PNViewDetailController.h" // 商城
 @interface AppDelegate ()<EMChatManagerDelegate>
 
@@ -141,12 +141,12 @@
     
     // 商城VC
     PNViewDetailController *shop = [[PNViewDetailController alloc]init];
-    PNChatViewController *chat = [[PNChatViewController alloc]init];
+    PNForumViewController *chat = [[PNForumViewController alloc]init];
     
     PNMyTableViewController *my = [[PNMyTableViewController alloc]init];
     [self.tabBarVC addViewControllerWithVC:map Title:@"地图" imageName:@"item_map_off" selectedImageName:@"item_map_on"];
     [self.tabBarVC addViewControllerWithVC:shop Title:@"商城" imageName:@"item_store_off" selectedImageName:@"item_store_on"];
-    [self.tabBarVC addViewControllerWithVC:chat Title:@"通讯" imageName:@"item_chat_off" selectedImageName:@"item_chat_on"];
+    [self.tabBarVC addViewControllerWithVC:chat Title:@"论坛" imageName:@"item_chat_off" selectedImageName:@"item_chat_on"];
     
     [self.tabBarVC addViewControllerWithVC:my Title:@"服务" imageName:@"item_user_off" selectedImageName:@"item_user_on"];
     self.window.rootViewController=self.tabBarVC;

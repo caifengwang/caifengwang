@@ -19,6 +19,9 @@
 #import "RegistrationVC.h"
 #import "PNQualityTestingViewController.h"
 #import "PNHelpViewController.h"
+
+
+#import "PNChatViewController.h"
 @interface PNMyTableViewController ()
 {
     UIButton *SignOutBtn;
@@ -148,8 +151,8 @@
     group.items = [NSMutableArray array];
     
     group.header = @"个人设置";
-    NSArray *oneSection = @[@"资质认证",@"专家问诊",@"技术帮助",@"质检审核",@"迁徙服务",@"叫车服务",@"设置"];
-    NSArray *imageArray = @[@"xiaoxi",@"jiaoyi",@"shenfen",@"fankui",@"jiaobu",@"car",@"guanyu"];
+    NSArray *oneSection = @[@"资质认证",@"专家问诊",@"技术帮助",@"质检审核",@"迁徙服务",@"叫车服务",@"蜜都好友交流中心",@"设置"];
+    NSArray *imageArray = @[@"xiaoxi",@"jiaoyi",@"shenfen",@"fankui",@"jiaobu",@"car",@"jiaobu",@"jiaobu",@"guanyu"];
     for (int i = 0; i < oneSection.count; i ++) {
         // 创建行模型
         //GPSettingItem *item = [GPSettingArrowItem itemWithTitle:oneSection[i]];
@@ -199,7 +202,11 @@
             else if (indexPath.row == 5){
                 NSLog(@"叫车服务");
             }
-            else if (indexPath.row == 6)
+            else if (indexPath.row == 6){
+                PNChatViewController *chat = [[PNChatViewController alloc]init];
+                [self.navigationController pushViewController:chat animated:YES];
+            }
+            else if (indexPath.row == 7)
             {
                 NSLog(@"设置界面");
                 PNSettingTableViewController *aboutVC = [[PNSettingTableViewController alloc]init];

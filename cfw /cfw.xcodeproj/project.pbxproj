@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		353746DD6E5052BFB5EA092E /* libPods-cfw.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC267FC216B45F1208097CD /* libPods-cfw.a */; };
+		C407A7E61E16020F005F8BF5 /* PNForumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C407A7E51E16020F005F8BF5 /* PNForumViewController.m */; };
 		C4DBA0C71E137C7300D97728 /* SRAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DBA0C61E137C7300D97728 /* SRAlertView.m */; };
 		C4DBA0CB1E137CFC00D97728 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DBA0C91E137CFC00D97728 /* FXBlurView.m */; };
 		F219880B1E0E751900260278 /* PNMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F21988081E0E751900260278 /* PNMapViewController.m */; };
@@ -545,6 +546,8 @@
 		60CD9F4BCB333625E40DC158 /* Pods-cfw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cfw.release.xcconfig"; path = "Pods/Target Support Files/Pods-cfw/Pods-cfw.release.xcconfig"; sourceTree = "<group>"; };
 		6FB51A39BFD280A7D820DA89 /* Pods-cfw.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cfw.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cfw/Pods-cfw.debug.xcconfig"; sourceTree = "<group>"; };
 		BDC267FC216B45F1208097CD /* libPods-cfw.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-cfw.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C407A7E41E16020F005F8BF5 /* PNForumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PNForumViewController.h; path = Forum/PNForumViewController.h; sourceTree = "<group>"; };
+		C407A7E51E16020F005F8BF5 /* PNForumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PNForumViewController.m; path = Forum/PNForumViewController.m; sourceTree = "<group>"; };
 		C4DBA0C51E137C7300D97728 /* SRAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRAlertView.h; sourceTree = "<group>"; };
 		C4DBA0C61E137C7300D97728 /* SRAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRAlertView.m; sourceTree = "<group>"; };
 		C4DBA0C81E137CFC00D97728 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
@@ -1451,6 +1454,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C407A7E31E16019B005F8BF5 /* Forum */ = {
+			isa = PBXGroup;
+			children = (
+				C407A7E41E16020F005F8BF5 /* PNForumViewController.h */,
+				C407A7E51E16020F005F8BF5 /* PNForumViewController.m */,
+			);
+			name = Forum;
+			sourceTree = "<group>";
+		};
 		F21988061E0E751900260278 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -1864,6 +1876,7 @@
 		F25567101D960D8C000E8369 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				C407A7E31E16019B005F8BF5 /* Forum */,
 				F261403F1D9A62CE00299AE9 /* Register */,
 				F2B14E6F1D9907960087B72D /* Login */,
 				F229DFCE1D966BB000AA8172 /* Libs */,
@@ -4029,6 +4042,7 @@
 				F28E80331DCAD3420004C41D /* GroupSettingViewController.m in Sources */,
 				F230FE1F1DB892B4007F6DDA /* TWMessageBarManager.m in Sources */,
 				F28E80371DCAD3420004C41D /* SearchChatViewController.m in Sources */,
+				C407A7E61E16020F005F8BF5 /* PNForumViewController.m in Sources */,
 				F2B4D1041DC72567004D4EEF /* MWTapDetectingView.m in Sources */,
 				F2B4D13C1DC72568004D4EEF /* EaseUserCell.m in Sources */,
 				F2B4D11B1DC72568004D4EEF /* PSTCollectionViewData.m in Sources */,
