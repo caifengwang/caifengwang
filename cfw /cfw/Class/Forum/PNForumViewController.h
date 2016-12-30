@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface PNForumViewController : UIViewController
+@interface PNForumViewController : PNBaseViewController
 
 @end
