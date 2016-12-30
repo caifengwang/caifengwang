@@ -31,7 +31,7 @@
     
 //    group.header = @"个人设置";
     NSArray *oneSection = @[@"资料完善",@"用户反馈",@"关于我们"];
-    NSArray *imageArray = @[@"xiaoxi",@"jiaoyi",@"jiaoyi"];
+    NSArray *imageArray = @[@"replenish_ico",@"update_ico",@"we_ico"];
     for (int i = 0; i < oneSection.count; i ++) {
         // 创建行模型
         //GPSettingItem *item = [GPSettingArrowItem itemWithTitle:oneSection[i]];

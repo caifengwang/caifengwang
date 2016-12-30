@@ -152,7 +152,7 @@
     
     group.header = @"个人设置";
     NSArray *oneSection = @[@"资质认证",@"专家问诊",@"技术帮助",@"质检审核",@"迁徙服务",@"叫车服务",@"蜜都好友交流中心",@"设置"];
-    NSArray *imageArray = @[@"xiaoxi",@"jiaoyi",@"shenfen",@"fankui",@"jiaobu",@"car",@"jiaobu",@"jiaobu",@"guanyu"];
+    NSArray *imageArray = @[@"zizhirenzheng",@"zhuangjiawenzhen",@"jishubangzhu",@"zijianshenhe",@"qianxifuwu",@"jiaochefuwu",@"jiaoliu",@"shezhi"];
     for (int i = 0; i < oneSection.count; i ++) {
         // 创建行模型
         //GPSettingItem *item = [GPSettingArrowItem itemWithTitle:oneSection[i]];
