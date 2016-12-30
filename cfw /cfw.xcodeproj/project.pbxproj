@@ -216,8 +216,6 @@
 		F26140331D9A4C0600299AE9 /* welcome.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F26140321D9A4C0600299AE9 /* welcome.jpg */; };
 		F26140351D9A4C0B00299AE9 /* zhuce_bj.png in Resources */ = {isa = PBXBuildFile; fileRef = F26140341D9A4C0B00299AE9 /* zhuce_bj.png */; };
 		F26140381D9A501800299AE9 /* PNAutoLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26140371D9A501800299AE9 /* PNAutoLoginViewController.m */; };
-		F261403A1D9A505700299AE9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F26140391D9A505600299AE9 /* CoreTelephony.framework */; };
-		F261403D1D9A535600299AE9 /* PNiphoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = F261403C1D9A535600299AE9 /* PNiphoneNumber.m */; };
 		F26140451D9A630F00299AE9 /* PNRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26140441D9A630F00299AE9 /* PNRegisterViewController.m */; };
 		F26A1E411DB9E080004877BA /* login_close_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F26A1E401DB9E080004877BA /* login_close_icon@3x.png */; };
 		F26A1E471DB9E337004877BA /* PNChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26A1E441DB9E337004877BA /* PNChatViewController.m */; };
@@ -515,7 +513,6 @@
 		F2CA02DF1E07B41F00FE96A9 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CA02D91E07B41F00FE96A9 /* NSString+Size.m */; };
 		F2CA02E01E07B41F00FE96A9 /* LiuXSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CA02DB1E07B41F00FE96A9 /* LiuXSegmentView.m */; };
 		F2CA02E11E07B41F00FE96A9 /* LXSegmentScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CA02DD1E07B41F00FE96A9 /* LXSegmentScrollView.m */; };
-		F2CA02F11E07DC2100FE96A9 /* noload.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2CA02F01E07DC2100FE96A9 /* noload.jpg */; };
 		F2D607FB1E10FA68000E7729 /* PNHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D607FA1E10FA68000E7729 /* PNHelpViewController.m */; };
 		F2D607FE1E121AD3000E7729 /* PNUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D607FD1E121AD3000E7729 /* PNUser.m */; };
 		F2E5D2C51DB60F4B0002C23C /* fankui.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E5D2C01DB60F4B0002C23C /* fankui.png */; };
@@ -577,6 +574,7 @@
 		F221FD4D1E0BADE500915A46 /* PNPerfectInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNPerfectInfoViewController.m; sourceTree = "<group>"; };
 		F221FD551E0CD80E00915A46 /* AKSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKSegmentedControl.h; sourceTree = "<group>"; };
 		F221FD561E0CD80E00915A46 /* AKSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKSegmentedControl.m; sourceTree = "<group>"; };
+		F2236A2D1E15E163005A39CF /* cfw.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = cfw.entitlements; sourceTree = "<group>"; };
 		F229DFCB1D9657CE00AA8172 /* PNTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNTabBarViewController.h; sourceTree = "<group>"; };
 		F229DFCC1D9657CE00AA8172 /* PNTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNTabBarViewController.m; sourceTree = "<group>"; };
 		F229DFEC1D966BF300AA8172 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
@@ -799,8 +797,6 @@
 		F26140361D9A501800299AE9 /* PNAutoLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNAutoLoginViewController.h; sourceTree = "<group>"; };
 		F26140371D9A501800299AE9 /* PNAutoLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNAutoLoginViewController.m; sourceTree = "<group>"; };
 		F26140391D9A505600299AE9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		F261403B1D9A535600299AE9 /* PNiphoneNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNiphoneNumber.h; sourceTree = "<group>"; };
-		F261403C1D9A535600299AE9 /* PNiphoneNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNiphoneNumber.m; sourceTree = "<group>"; };
 		F26140431D9A630F00299AE9 /* PNRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNRegisterViewController.h; sourceTree = "<group>"; };
 		F26140441D9A630F00299AE9 /* PNRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNRegisterViewController.m; sourceTree = "<group>"; };
 		F26A1E401DB9E080004877BA /* login_close_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_close_icon@3x.png"; sourceTree = "<group>"; };
@@ -1354,7 +1350,6 @@
 		F2CA02DB1E07B41F00FE96A9 /* LiuXSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiuXSegmentView.m; sourceTree = "<group>"; };
 		F2CA02DC1E07B41F00FE96A9 /* LXSegmentScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXSegmentScrollView.h; sourceTree = "<group>"; };
 		F2CA02DD1E07B41F00FE96A9 /* LXSegmentScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXSegmentScrollView.m; sourceTree = "<group>"; };
-		F2CA02F01E07DC2100FE96A9 /* noload.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = noload.jpg; sourceTree = "<group>"; };
 		F2D607F91E10FA68000E7729 /* PNHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNHelpViewController.h; sourceTree = "<group>"; };
 		F2D607FA1E10FA68000E7729 /* PNHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNHelpViewController.m; sourceTree = "<group>"; };
 		F2D607FC1E121AD3000E7729 /* PNUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNUser.h; sourceTree = "<group>"; };
@@ -1371,7 +1366,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F261403A1D9A505700299AE9 /* CoreTelephony.framework in Frameworks */,
 				F26D66271DC72D16008F9434 /* Bolts.framework in Frameworks */,
 				F2B4CCD31DC71BDB004D4EEF /* AudioToolbox.framework in Frameworks */,
 				F26A22021DB9F6CD004877BA /* Accounts.framework in Frameworks */,
@@ -1824,6 +1818,7 @@
 		F25566DC1D9607B6000E8369 /* cfw */ = {
 			isa = PBXGroup;
 			children = (
+				F2236A2D1E15E163005A39CF /* cfw.entitlements */,
 				F221FD431E0BA73700915A46 /* ChatDemo-UI3.0-Prefix.pch */,
 				F25566E01D9607B6000E8369 /* AppDelegate.h */,
 				F25566E11D9607B6000E8369 /* AppDelegate.mm */,
@@ -1916,7 +1911,6 @@
 		F25567131D960E84000E8369 /* Shop */ = {
 			isa = PBXGroup;
 			children = (
-				F2CA02F01E07DC2100FE96A9 /* noload.jpg */,
 				F255671E1D962247000E8369 /* PNShopViewController.h */,
 				F255671F1D962247000E8369 /* PNShopViewController.m */,
 				F296B1881DC1C9B5006385BD /* PNViewDetailController.h */,
@@ -2786,8 +2780,6 @@
 			children = (
 				F26140361D9A501800299AE9 /* PNAutoLoginViewController.h */,
 				F26140371D9A501800299AE9 /* PNAutoLoginViewController.m */,
-				F261403B1D9A535600299AE9 /* PNiphoneNumber.h */,
-				F261403C1D9A535600299AE9 /* PNiphoneNumber.m */,
 				F27ABB2F1E0A19DC0046A8AD /* PNtestViewController.h */,
 				F27ABB301E0A19DC0046A8AD /* PNtestViewController.m */,
 			);
@@ -3534,6 +3526,11 @@
 					F25566D91D9607B6000E8369 = {
 						CreatedOnToolsVersion = 7.3.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					F25566F21D9607B6000E8369 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -3670,7 +3667,6 @@
 				F22DF0561DCB22E40019A89D /* tabbar_contacts.png in Resources */,
 				F26140331D9A4C0600299AE9 /* welcome.jpg in Resources */,
 				F296B1721DC19653006385BD /* settings-icon.png in Resources */,
-				F2CA02F11E07DC2100FE96A9 /* noload.jpg in Resources */,
 				F22DF0271DCB22E40019A89D /* icon_013_cover.png in Resources */,
 				F2B14E6E1D99034B0087B72D /* icon.jpg in Resources */,
 				F25567C21D962E63000E8369 /* yzm@3x.jpg in Resources */,
@@ -3914,7 +3910,6 @@
 				F2B4D0F51DC72567004D4EEF /* MJRefreshBackStateFooter.m in Sources */,
 				F28E80401DCAD3420004C41D /* ApplyFriendCell.m in Sources */,
 				F25567171D960ED2000E8369 /* PNBaseViewController.m in Sources */,
-				F261403D1D9A535600299AE9 /* PNiphoneNumber.m in Sources */,
 				F28E80441DCAD3420004C41D /* UserProfileManager.m in Sources */,
 				F221FD531E0BADE500915A46 /* PNPerfectInfoViewController.m in Sources */,
 				C4DBA0C71E137C7300D97728 /* SRAlertView.m in Sources */,
@@ -4293,6 +4288,7 @@
 			baseConfigurationReference = 6FB51A39BFD280A7D820DA89 /* Pods-cfw.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = cfw/cfw.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = VJMSD592WQ;
 				ENABLE_BITCODE = NO;
@@ -4311,7 +4307,7 @@
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/cfw/ChatDemo-UI3.0-Prefix.pch";
 				INFOPLIST_FILE = cfw/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4327,7 +4323,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.prismnetwork.www.cfw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
@@ -4337,6 +4335,7 @@
 			baseConfigurationReference = 60CD9F4BCB333625E40DC158 /* Pods-cfw.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = cfw/cfw.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = VJMSD592WQ;
 				ENABLE_BITCODE = NO;
@@ -4355,7 +4354,7 @@
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/cfw/ChatDemo-UI3.0-Prefix.pch";
 				INFOPLIST_FILE = cfw/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4371,7 +4370,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.prismnetwork.www.cfw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;

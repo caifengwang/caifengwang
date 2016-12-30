@@ -201,6 +201,14 @@
             }
             else if (indexPath.row == 5){
                 NSLog(@"叫车服务");
+                
+                [SRAlertView sr_showAlertViewWithTitle:@"提醒"
+                                               message:@"程序猿正在玩命开发，敬请期待"
+                                       leftActionTitle:@"确定"
+                                      rightActionTitle:@"取消"
+                                        animationStyle:AlertViewAnimationDownToCenterSpring
+                                              delegate:self];
+
             }
             else if (indexPath.row == 6){
                 PNChatViewController *chat = [[PNChatViewController alloc]init];

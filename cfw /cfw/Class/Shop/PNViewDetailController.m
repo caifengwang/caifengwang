@@ -267,7 +267,7 @@
    // self.tabBarController.tabBar.hidden = YES;
     self.navigationController.navigationBar.hidden = YES;
     // 这里加载webView的背景图
-    self.WKwebView.backgroundColor = [UIColor colorWithPatternImage:[self imageResize:[UIImage imageNamed:@"noload.jpg"] andResizeTo:self.WKwebView.bounds.size]];
+    self.WKwebView.backgroundColor = [UIColor colorWithPatternImage:[self imageResize:[UIImage imageNamed:@"noload.png"] andResizeTo:self.WKwebView.bounds.size]];
     
 }
 
