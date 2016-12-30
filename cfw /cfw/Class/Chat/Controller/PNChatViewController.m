@@ -62,7 +62,7 @@
 {
     __weak __typeof(self) weakSelf = self;
     if (!self.menu) {
-        self.menu = [[JHCustomMenu alloc] initWithDataArr:@[@"校内群聊", @"邀请好友"] origin:CGPointMake(0, 0) width:125 rowHeight:44];
+        self.menu = [[JHCustomMenu alloc] initWithDataArr:@[@"技术群聊", @"邀请好友"] origin:CGPointMake(0, 0) width:125 rowHeight:44];
         _menu.delegate = self;
         _menu.dismiss = ^() {
             weakSelf.menu = nil;
@@ -81,7 +81,13 @@
     NSLog(@"select: %ld", indexPath.row);
     
     if (indexPath.row == 0) {
-        
+        [SRAlertView sr_showAlertViewWithTitle:@"提醒"
+                                       message:@"程序猿正在玩命开发，敬请期待"
+                               leftActionTitle:@"确定"
+                              rightActionTitle:@"取消"
+                                animationStyle:AlertViewAnimationDownToCenterSpring
+                                      delegate:self];
+
         NSLog(@"群聊");
     }else if (indexPath.row == 1){
         AddFriendViewController *addFriends = [[AddFriendViewController alloc]init];

@@ -97,7 +97,7 @@
     NSString *name = [dic objectForKey:@"name"];
     //http://192.168.0.156:8080/miningbee-web/browser/getcheck?Phone=18321933220
     //[self.WKwebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://192.168.0.156:8080/miningbee-web/browser/getcheck?Phone=%@",name]]]];
-     [self.WKwebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://bee.prismnetwork.cn/browser/getcheck?Phone=18321933220"]]]];
+     [self.WKwebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://bee.zhongguomidu.com/browser/getcheck?Phone=18321933220"]]]];
     //
     //    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     //    button.frame = CGRectMake(40, 22, 50, 50);

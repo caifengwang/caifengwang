@@ -13,7 +13,6 @@
 #import "MBProgressHUD.h"
 #import "PNMapViewController.h"
 #import "WXDataService.h"
-#import "PNiphoneNumber.h"
 #import "RegistrationVC.h"
 @interface PNAutoLoginViewController ()<UITextFieldDelegate>
 {

@@ -14,7 +14,7 @@
 #import <SVProgressHUD.h>
 #define IOS8x ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0)
 #define WebViewNav_TintColor ([UIColor orangeColor])
-#define HomeUrl1    [NSURL URLWithString:@"http://bee.prismnetwork.cn/feedbeekno.jsp"]
+#define HomeUrl1    [NSURL URLWithString:@"http://bee.zhongguomidu.com/feedbeekno.jsp"]
 @interface PNHelpViewController ()<WKNavigationDelegate,UIWebViewDelegate,WKUIDelegate>
 @property (nonatomic,strong) WKWebView *WKwebView;
 @property (nonatomic,strong) UIWebView *webView;

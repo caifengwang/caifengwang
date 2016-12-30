@@ -89,7 +89,7 @@
     
     //    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.tmall.com"]]];
     
-    [self.WKwebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://bee.prismnetwork.cn/toexamine.jsp"]]];
+    [self.WKwebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://bee.zhongguomidu.com/toexamine.jsp"]]];
     
     
     //
